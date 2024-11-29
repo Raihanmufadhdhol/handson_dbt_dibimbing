@@ -19,6 +19,15 @@ SELECT
   {{ dbt_utils.generate_surrogate_key([
 				'`promotion-ids`'
 			]) }} as promotion_id,
+  {{ dbt_utils.generate_surrogate_key([
+        '`ship-postal-code`',
+        '`ship-city`',
+        '`ship-state`',
+        '`ship-country`'
+      ]) }} AS shipment_id,
+  {{ dbt_utils.generate_surrogate_key([
+        '`Sales Channel `'
+      ]) }} AS sales_channel_id,
   SUM(qty) AS qty,
   COALESCE(SUM(amount),0) AS amount,
 FROM
