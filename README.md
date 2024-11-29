@@ -1,4 +1,4 @@
-Assignment Guidance: Data Warehouse Modeling 
+Data Warehouse Modeling 
 
 1. (0) Upload the data into BigQuery Table (Hands on: Exercise) (DONE)
 2. (0) Build table dim_fulfilment using DBT (Hands on: Exercise) ([DONE IN MODELS](https://github.com/Raihanmufadhdhol/handson_dbt_dibimbing/blob/main/dibimbing/models/dim_fulfillment.sql))
